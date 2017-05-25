@@ -1,0 +1,34 @@
+<div id="menu" style="width:100vw; background-color: gray; padding: 3px;">
+
+<div class="dropdown">
+     <button data-toggle="dropdown" class="btn dropdown-toggle" >File <span class="caret"></span></button>
+
+     <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+         <li><button style="width:100%" class="btn dropdown-toggle" ng-click="nuovaRegola()">
+             Nuova Regola</button></li>
+         <li><button style="width:100%" class="btn dropdown-toggle" 
+              ng-click="nuovoOpComplesso()" ng-disabled="true">
+             Nuovo Operatore Complesso</button></li>
+         <li><button style="width:100%" class="btn dropdown-toggle"
+          ng-click="esportaRegola()" ng-disabled="!hasPaper" >
+             Esporta Regola </button></li>
+         <li><button style="width:100%" class="btn dropdown-toggle"
+          ng-click="chiudiFoglioDiLavoro()" ng-disabled="!hasPaper">
+             Chiudi foglio di lavoro</button></li>
+     </ul>
+    <button class="btn dropdown-toggle" ng-click="nuovaPortaOpCompl()"
+    ng-disabled="true"> Nuova Porta Operatore Complesso</button>
+    <button class="btn dropdown-toggle" ng-click="verificaCorrettezza()"
+    ng-disabled="!hasPaper">
+        Verifica Correttezza </span></button>
+</div>
+</div>
+ 
+
+
+<div style="width:100vw; height:90vh;">
+<lista-operatori></lista-operatori>
+<foglio-di-lavoro></foglio-di-lavoro>
+    
+   
+</div>

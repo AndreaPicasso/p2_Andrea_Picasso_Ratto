@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Diagnostica di sistemi fisici</title>
+
+
+    <!--
+        JOINT DEPENDENCES
+    -->
+    <link rel="stylesheet" href="jointjs\dist\joint.css" />
+    <link rel="stylesheet" href="jointjs\css\themes\shapes-devs.css" />
+
+    <script src="jointjs/node_modules/jquery/dist/jquery.js"></script>
+    <script src="jointjs/node_modules/lodash/index.js"></script>
+    <script src="jointjs/node_modules/backbone/backbone.js"></script>
+    <script src="jointjs/dist/joint.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css">
+
+    <!--
+        JOINT EXTENTIONS
+    -->
+    <script src="core/jointjs_EXTENTIONS/myLink.js"></script>
+    <script src="core/jointjs_EXTENTIONS/operatore.js"></script>
+    <script src="core/jointjs_EXTENTIONS/operatoreComplesso.js"></script>
+    <script src="core/jointjs_EXTENTIONS/operatoreElementare.js"></script>
+    <script src="core/jointjs_EXTENTIONS/operatoreIORegola.js"></script>
+    <script src="core/jointjs_EXTENTIONS/myPortObject.js"></script>
+    <script src="core/jointjs_EXTENTIONS/tipiPossibili.js"></script>
+
+    
+    
+    <!--
+        ANGULAR DEPENDENCES
+    -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="app.css" />
+    <script src="bower_components/angular/angular.js"></script>
+
+    <script src="app.js"></script>
+    <link href="/bower_components/bootstrap/dist/js/bootstrap.min.js" />
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.3.0.js"></script>
+    <script src="bower_components/angular-bootstrap-contextmenu/contextMenu.js"></script>
+
+
+
+
+
+
+
+        <!--  COMPONENTS -->
+        <script src="core/lista-operatori/lista-operatori.component.js"></script>
+        <script src="core/foglio-di-lavoro/foglio-di-lavoro.component.js"></script>
+        <script src="core/editor/editor.component.js"></script>
+        <script src="core/context-menu/context-menu.js"></script>
+
+        
+    <!-- 
+
+          SERVICES
+        <script src="core/jointjs-wrapper_OLD/jointjs-wrapper.service.js"></script>
+
+
+    -->
+    <script src="core/foglio-di-lavoro/foglio-di-lavoro.service.js"></script>
+    <script src="core/lista-operatori/lista-operatori.service.js"></script>
+    <script src="core/validity-checker/validity-checker.service.js"></script>
+
+
+
+
+
+
+
+  </head>
+  <body>
+
+    <!-- Use a custom component to render the editor -->
+  <editor></editor>
+
+
+  </body>
+</html>

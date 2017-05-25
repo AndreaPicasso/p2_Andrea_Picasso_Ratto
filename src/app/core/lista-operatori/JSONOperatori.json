@@ -1,0 +1,396 @@
+
+
+[
+{   "nome":"Costante",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"string"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}} 
+         ],
+    "hasParam": "true",
+    "paramType":"all",
+    "paramValue": "1",
+    "nomeParametro": "ValoreCostante",
+    "descrizione": "Il moulo Costante genera una serie di dati aventi come valore il valore del paramentro impostato a priori.",
+    "categoria": "OperatoreElementare"
+},
+
+
+{   "nome":"ContatoreTransizioni",
+    "operatori":
+        [
+        {"tipo":"transizioni0/1",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"true",
+    "paramValue": "false",
+     "paramType":"boolean",
+    "nomeParametro": "Comportamento",
+    "descrizione": "Questo tipo di contatore pu`o contare il numero di transizioni (da 0 a 1 e viceversa) dei dati di ingresso, oppure tenere traccia del fronte di salita dei dati (per quanto tempo `e presente una serie di 1), questi due casi sono gestiti da un parametro booleano che indicher`a l’una o l’altra opzione. ",
+    "categoria": "OperatoreElementare"
+},
+
+{   "nome":"Contatore",
+    "operatori":
+        [
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+         {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"string"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"array",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"array"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+         ],
+    "hasParam":"false",
+    "paramValue": "",
+    "paramType":"",
+    "nomeParametro": "",
+    "descrizione": "Quest’altro tipo di contatore accetta in ingresso una serie di dati e ne conta le occorrenze restituendone il numero totale.",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+
+{   "nome":"Accumulatore",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"true",
+   
+    "paramType":"numeric",
+    "nomeParametro": "ValoreIniziale",
+    "descrizione": "Il modulo Accumulatore ha due valori in ingresso: un numero in virgola mobile (o un intero) che verr`a sommato ai valori ricevuti precedentemente e un valore booleano che, se impostato a 1, indica la necessit`a di eseguire un reset. Il parametro, che pu`o essere un numero intero o in virgola mobile, indica il valore da cui far partire la somma una volta eﬀettuato un reset. L’output del modulo sar`a un numero intero o in virgola mobile corrispondente alla somma dei valori in ingresso.",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+
+
+
+{   "nome":"Comparatore",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+         ],
+    "hasParam":"false",
+    "paramValue": "",
+    "paramType":"empty",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo si occupa di eseguire un confronto del tipo x1 < x2, dove x1 e x2 sono i due valori in ingresso (i quali devono condividere il tipo). L’output `e un valore booleano che indicher`a se il confronto `e veriﬁcato o meno. Per gestire altri tipi di confronto (ad esempio ≤,>,≥,=) sar`a necessario connettere in modo opportuno questo modulo ad uno o piu` moduli logici.",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+{   "nome":"MediaMobile",
+    "operatori":
+        [
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+         {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"true",
+    "paramType":"numeric",
+    "paramValue": "0",
+    "nomeParametro": "TempoIniziale",
+    "descrizione": "All’interno di questo modulo viene calcolata la media mobile dai dati di input. Il parametro indica dopo quanto tempo iniziare a calcolare la media. ",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+
+{   "nome":"Somma",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramValue": "",
+    "paramType":"",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo calcola la somma tra i due dati di input, i quali devono condividere il tipo.",
+    "categoria": "OperatoreElementare"
+},
+
+
+{   "nome":"Differenza",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramValue": "",
+    "paramType":"",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo calcola la differenza tra i due dati di input, i quali devono condividere il tipo.",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+
+{   "nome":"Integratore",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo esegue l’integrale dei dati numerici in ingresso. L’ingresso booleano ha il compito di deﬁnire l’intervallo di integrazione: l’estremo iniziale sar`a indicato dal primo fronte di salita della serie di dati in input, mentre quello ﬁnale dal successivo fronte di discesa",
+    "categoria": "OperatoreElementare"
+},
+
+
+{   "nome":"Derivatore",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo si occupa di calcolare l’andamento (crescente o decrescente) della funzione rappresentata dai dati numerici di ingresso. L’ingresso booleano ha il compito di deﬁnire l’intervallo su cui calcolare l’andamento: l’estremo iniziale sar`a indicato dal primo fronte di salita della serie di dati in input, mentre quello ﬁnale dal successivo fronte di discesa.",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+{   "nome":"ANDLogico",
+    "operatori":
+        [
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramValue": "",
+    "paramType":"",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo esegue l’operazione di AND logico (∧) tra i due valori booleani d’ingresso.",
+    "categoria": "OperatoreElementare"
+},
+
+
+{   "nome":"ORLogico",
+    "operatori":
+        [
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo esegue l’operazione di OR logico (V) tra i due valori booleani d’ingresso.",
+    "categoria": "OperatoreElementare"
+},
+
+{   "nome":"XORLogico",
+    "operatori":
+        [
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo esegue l’operazione di XOR logico tra i due valori booleani d’ingresso.",
+    "categoria": "OperatoreElementare"
+},
+
+{   "nome":"NOTLogico",
+    "operatori":
+        [
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo esegue l’operazione di NOT logico (-) di un valore booleano d’ingresso.",
+    "categoria": "OperatoreElementare"
+},
+{   "nome":"ConcatenatoreStringhe",
+    "operatori":
+        [
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1","in_2"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"string"},{"id":"in_2","group":"in","attrs":{".port-label":{"text":"in_2"}},"tipo":"string"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"string"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo accetta in input due stringhe e le concatena separandole con la stringa deﬁnita dal parametro.",
+    "categoria": "OperatoreElementare"
+},
+{   "nome":"Disgregatore",
+    "operatori":
+        [
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"array"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"array"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"array"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"array"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"string"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Il Disgregatore accetta in ingresso una tupla e restituisce in uscita gli elementi contenuti in essa serializzati.",
+    "categoria": "OperatoreElementare"
+},
+{   "nome":"Aggregatore",
+    "operatori":
+        [
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"array"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"array"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"array"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"string"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"array"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"true",
+    "paramType":"numeric",
+    "paramValue": "1",
+    "nomeParametro": "dimensione",
+    "descrizione": "L’Aggregatore accetta in ingresso una serie di dati e li aggrega in una tupla restituendola in output. Il parametro indica la dimensione della tupla.",
+    "categoria": "OperatoreElementare"
+},
+
+
+{   "nome":"ConvertitoreLongDouble",
+    "operatori":
+        [
+        {"tipo":"long/double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo accetta come input dei numeri interi e li converte in numeri in virgola mobile.",
+    "categoria": "OperatoreElementare"
+},
+
+{   "nome":"ConvertitoreDoubleLong",
+    "operatori":
+        [
+       {"tipo":"double/long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"true",
+    "paramType":"boolean",
+    "paramValue": "false",
+    "nomeParametro": "approssimazioneParteInteraInferiore",
+    "descrizione": "Questo modulo accetta come input dei numeri in virgola mobile e un parametro che indica il metodo di approssimazione (parte intera superiore o inferiore) ed eﬀettua la conversione in numeri interi",
+    "categoria": "OperatoreElementare"
+},
+
+{   "nome":"ConvertitoreStringDouble",
+    "operatori":
+        [
+        {"tipo":"string/double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"string"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double/string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"},{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"string"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+        ],
+    "hasParam":"",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo converte segnali String a virgola mobile e viceversa.",
+    "categoria": "OperatoreElementare"
+},
+
+
+
+{   "nome":"Source",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"string"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"array",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":[],"outPorts":["out_1"],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"out_1","group":"out","attrs":{".port-label":{"text":"out_1"}},"tipo":"array"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}  
+         ],
+    "hasParam":"false",
+    "paramType":"",
+    "paramValue": "",
+    "nomeParametro": "",
+    "descrizione": "Questo modulo rappresenta un segnale di ingresso",
+    "categoria": "OperatoreIORegola"
+},
+
+{   "nome":"Sink",
+    "operatori":
+        [
+        {"tipo":"long",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":[],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"long"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"double",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":[],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"double"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"boolean",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":[],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"boolean"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"string",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":[],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"string"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}},
+        {"tipo":"array",
+        "operatore":{"type":"devs.Atomic","size":{"width":80,"height":80},"inPorts":["in_1"],"outPorts":[],"ports":{"groups":{"in":{"position":{"name":"left"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"left","args":{"y":10}}}},"out":{"position":{"name":"right"},"attrs":{".port-label":{"fill":"#000"},".port-body":{"fill":"#fff","stroke":"#000","r":10,"magnet":true}},"label":{"position":{"name":"right","args":{"y":10}}}}},"items":[{"id":"in_1","group":"in","attrs":{".port-label":{"text":"in_1"}},"tipo":"array"}]},"position":{"x":300,"y":100},"angle":0,"id":"2dcf98a4-994b-42f0-8a2a-687ca1f18aa6","z":2,"parent":"3aa755e6-cf88-4577-b837-a63fc54aaf0f","attrs":{".label":{"text":"Som\nma"},".body":{"rx":6,"ry":6}}}}
+         
+         ],
+    "hasParam":"false",
+    "paramValue": "",
+    "nomeParametro": "",
+    "paramType":"",
+    "descrizione": "Questo modulo rappresenta un segnale di uscita",
+    "categoria": "OperatoreIORegola"
+}
+
+
+
+
+]
