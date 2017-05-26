@@ -1,5 +1,9 @@
 /**
  * ContextMenu
+ * 
+ * (abbiamo dovuto creare il ContextMenu al di fuori di Angular siccome, Jointjs
+ * manipola il DOM internamente e da Angular non possiamo accedere ad elementi
+ * nel "div" di un foglio di lavoro Jointjs)
  *  
  */
 
@@ -76,6 +80,9 @@ function ContextMenu(){
 
     /*
      Richiede il parametro in input e verifica se il suo valore è accetabile
+
+     Rispetto al modelling non viene visualizzata la descrizione dell'operatore in quanto
+     ritenuto inutilmente complicato da effettuare
     */
     var setParam = function(cellView, $window){
         if(cellView.model.hasParametro == 'true'){
@@ -92,10 +99,8 @@ function ContextMenu(){
                 if(cellView.model.paramType=="numeric" && !isNaN(newValue)){
                    corretto=true;
                 }
-
                 if(!corretto){
                     $window.alert("Valore non compatibile al tipo: "+cellView.model.paramType);
-                    break;
                 }
             }
             if(corretto){

@@ -2,6 +2,7 @@
  *  Operatore
  *  estente gli operatori di Jointjs
  */
+
 operatore = joint.shapes.devs.Atomic.extend({
     
     nome: "",

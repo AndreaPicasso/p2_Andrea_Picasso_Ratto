@@ -6,6 +6,7 @@
  *  Abbiamo deciso di non implementare Operatore Complesso
  *  in Angular non è possibile derivare in maniera pulita Service e Component
  */
+
 app.service('ValidityCheckerService', function(){
 
     this.grafo="";
@@ -68,11 +69,11 @@ app.service('ValidityCheckerService', function(){
 
 
 
-/*
-    Il diagramma della fase di modelling viene lievemente modificato in quanto la libreria joint
-    non distingue tra Sources e Sinks, getSources e getSinks danno lo stesso risultato se gli 
-    operatori non sono collegati
-*/
+    /*
+        Il diagramma della fase di modelling viene lievemente modificato in quanto la libreria joint
+        non distingue tra Sources e Sinks, getSources e getSinks danno lo stesso risultato se gli 
+        operatori non sono collegati
+    */
     this.controlloMolteplicita=function(){
         var sources=this.grafo.getSources();
         var sinks=this.grafo.getSinks();
@@ -102,13 +103,13 @@ app.service('ValidityCheckerService', function(){
 
 
 
-/*
-    Ho fatto una modifica rispetto a quanto riportato nel modello di sequenza relativo a "tuttoCollegato"
-    in quanto non basta controllare che siano uguali l'id della porta e l'id della porta di un link
-    perchè l'id della porta è univoco all'interno dell'operatore non globalmente
-    L'algoritmo seguente è stato lievemente modificato al fine di tenere traccia di quale elemento appartiene
-    la porta
-*/
+    /*
+        Ho fatto una modifica rispetto a quanto riportato nel modello di sequenza relativo a "tuttoCollegato"
+        in quanto non basta controllare che siano uguali l'id della porta e l'id della porta di un link
+        perchè l'id della porta è univoco all'interno dell'operatore non globalmente
+        L'algoritmo seguente è stato lievemente modificato al fine di tenere traccia di quale elemento appartiene
+        la porta
+    */
     this.tuttoCollegato=function(){
         var links=this.grafo.getLinks();
         var operatori=this.grafo.getElements();
@@ -142,12 +143,6 @@ app.service('ValidityCheckerService', function(){
     }
 
  
-
-
-    /*
-        Rispetto a quanto riportato in fase di modellazione, siamo riusciti a farci passare 
-        anche il linkView, il che semplifica le operazioni di controllo
-    */
     this.correttezzaLink = function(linkToCheck, sourcePort, targetPort, targetOperator, sourceOperator, links){
         /*
         CONTROLLI:

@@ -1,12 +1,19 @@
 /**
  *  Operatore IO Regola
  *  estende il nostro operatore
+ * 
  */
+
 operatoreIORegola = operatore.extend({
     
     molteplicita: "",
     sensorIDs: "",
-
+    // Modifiche rispetto alla fase di modelling:
+    // siccome sink e source sono trattate come Operatori,
+    // abbiamo deciso di aggiungere anche a loro una descrizione
+    // ed un hasParametro (che verrà settato a false)
+    hasParametro: false,
+    descrizione: "",
 
 
     /*
@@ -79,15 +86,12 @@ operatoreIORegola = operatore.extend({
             port.group = ports[i].group;
             port.attrs = ports[i].attrs;
             port.tipo = ports[i].tipo;
-            //port.qta = port[i].qta;
             port.id = ports[i].id;
             this.addPort(port);
         }
 
         //setto attributi relativi alle nostre funzionalità
         this.hasParametro = JSONoperatore.hasParam;
-        this.paramValue = JSONoperatore.paramValue;
-        this.nomeParametro = JSONoperatore.nomeParametro;
         this.descrizione = JSONoperatore.descrizione;
         this.nome = JSONoperatore.nome;
         //richiedo il valore della molteplicità 

@@ -12,14 +12,9 @@
 - The application filesystem layout structure is based on the [angular-seed][angular-seed] project.
 
 
-## Development with `angular-phonecat`
-
-The following docs describe how you can test and develop this application further.
-
 ### Installing Dependencies
 
-The application relies upon various Node.js tools, such as [Bower][bower], [Karma][karma] and
-[Protractor][protractor]. You can install these by running:
+The application relies upon various Node.js tools, such as [Bower][bower]. You can install these by running:
 
 ```
 npm install
@@ -38,13 +33,11 @@ it whenever you like.
   running.
 
 
-
 ## Application Directory Layout
 
 ```
 app/                     --> all the source code of the app (along with unit tests)
   bower_components/...   --> 3rd party JS/CSS libraries, including Angular and jQuery
-  jointjs                --> joint Library
   jointjs                --> joint Library
   core/                  --> all the source code of the core module 
     editor/...           --> all the source code of the editor
@@ -54,18 +47,10 @@ app/                     --> all the source code of the app (along with unit tes
   app.js                 --> the main app module
   index.html             --> app layout file (the main HTML template file of the app)
 
-e2e-tests/               --> config and source files for e2e tests
-  protractor.conf.js     --> config file for running e2e tests with Protractor
-  scenarios.js           --> e2e specs
-
 node_modules/...         --> development tools (fetched using `npm`)
 
-scripts/                 --> handy scripts
-  private/...            --> private scripts used by the Angular Team to maintain this repo
-  update-repo.sh         --> script for pulling down the latest version of this repo (!!! DELETES ALL CHANGES YOU HAVE MADE !!!)
 
 bower.json               --> Bower specific metadata, including client-side dependencies
-karma.conf.js            --> config file for running unit tests with Karma
 package.json             --> Node.js specific metadata, including development tools dependencies
 ```
 

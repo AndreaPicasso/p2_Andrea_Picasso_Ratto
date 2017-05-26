@@ -5,6 +5,7 @@
  *  di non implementare la parte relativa all'operatore complesso
  * 
  */
+
 operatoreComplesso = operatore.extend({
 
     grafoOperatoreComplesso:'',

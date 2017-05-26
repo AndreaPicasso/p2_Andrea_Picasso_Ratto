@@ -7,6 +7,7 @@
  *  abbiamo inserito un attributo nome, che (secondo ciò richiesto) sarà inserito nella forma:
  *  r_[numeroLink] -> es. r_12
  */
+
 myLink = joint.shapes.devs.Link.extend({
 
     nome: "",

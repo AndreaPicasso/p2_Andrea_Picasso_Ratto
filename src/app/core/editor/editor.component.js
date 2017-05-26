@@ -2,6 +2,7 @@
  *  EditorComponent
  * 
  */
+
 app.directive('editor', function () {
     return {
         restrict:'E',
@@ -20,17 +21,12 @@ function EditorController($scope, $log,$window, ListaOperatoriService, FoglioDiL
     che ci indichi la presenza o meno di un foglio di lavoro
     */
     this.hasPaper = false;
-
-//TOCHECK qui ho modificato l'ordine inserendo name poiche nel diagramma prima chiediamo il nome e poi creiamo 
-//il foglio di lavoro
     this.nuovaRegola = function(){
         if(!this.hasPaper){
             this.hasPaper = true;
             var name=$window.prompt("Inserisci il nome della regola:", "rule_n");                                           
             $scope.operatori = ListaOperatoriService.loadJSONOperatori();
-            //Funzione di "callback" con lo scopo grafico di modificare la descrizione
-            //Una volta cliccato su un operatore di un foglio di lavoro
-            FoglioDiLavoroService.creaFoglioDiLavoroRegola('fogliodilavoro', $scope.showDescription);
+            FoglioDiLavoroService.creaFoglioDiLavoroRegola('fogliodilavoro');
             FoglioDiLavoroService.nomeFoglioDiLavoro = name;
         }
         else{
