@@ -1,0 +1,31 @@
+*******************************************************
+*
+*
+*	Note all'installazione per Ubuntu 16.04
+*	
+*
+******************************************************
+
+
+1) Ottenere il pacchetto da https://github.com/Simosound94/p2_Merello_Simone/tree/master/src
+
+2) Intallare NodeJs (ho installato la versione 4.2.6)   	sudo apt-get intall nodejs
+
+3) Installare npm  (ho installato la versione 3.5.2)		sudo apt-get intall nodejs
+
+4) Install nella cartella del progetto				npm install
+
+5) Install nella cartella joint					npm install
+
+6) Provare a far partire il progetto				npm start
+
+7) Se come a me da errore /usr/bin/env: node: No such file or directory, basta cambiare il nome:
+								sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+
+8) Se errore: events.js:141 throw er; // Unhandled 'error' event un altro processo è sta usando la porta 8000
+								Spegnere e riaccendere (con comando sudo kill processo porta non funziona)
+
+
+								
+
