@@ -7,7 +7,7 @@
 ******************************************************
 
 
-1) Ottenere il pacchetto da https://github.com/Simosound94/p2_Merello_Simone/tree/master/src
+1) Ottenere il pacchetto da https://github.com/AndreaPicasso/p2_Picasso_Ratto_Andrea/tree/master/src
 
 2) Intallare NodeJs (ho installato la versione 4.2.6)   	sudo apt-get intall nodejs
 
