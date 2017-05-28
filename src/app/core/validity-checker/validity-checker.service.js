@@ -40,9 +40,9 @@ app.service('ValidityCheckerService', function(){
 
 
     this.almenoUnaSink=function(){
-        var sinks=this.grafo.getSinks();
+        //Uso Elements ed effettuo dopo i controlli motivo: vedi commento "controlloMolteplicita"
+        var sinks=this.grafo.getElements();
         var count = 0;
-        //Effettuo controlli motivo: vedi commento "controlloMolteplicita"
         for(var i=0; i<sinks.length;i++){
             if(sinks[i].isOperatoreIO() && sinks[i].nome=='Sink'){
                 count++;   
@@ -54,10 +54,10 @@ app.service('ValidityCheckerService', function(){
 
 
     this.almenoUnaSource=function(){
-        var sources=this.grafo.getSources();
+        //Uso Elements ed effettuo dopo i controlli motivo: vedi commento "controlloMolteplicita"
+        var sources=this.grafo.getElements();
         var i;
         var count = 0;
-        //Effettuo controlli motivo: vedi commento "controlloMolteplicita"
         for(var i=0; i<sources.length;i++){
             if(sources[i].isOperatoreIO() && sources[i].nome=='Source'){
                 count++;
@@ -72,7 +72,8 @@ app.service('ValidityCheckerService', function(){
     /*
         Il diagramma della fase di modelling viene lievemente modificato in quanto la libreria joint
         non distingue tra Sources e Sinks, getSources e getSinks danno lo stesso risultato se gli 
-        operatori non sono collegati
+        operatori non sono collegati, inoltre, se un quasiasi operatore è collegato con tutti i link 
+        dalla parte "target" questo automaticamente per joint diventa una Sink
     */
     this.controlloMolteplicita=function(){
         var sources=this.grafo.getSources();
@@ -141,6 +142,7 @@ app.service('ValidityCheckerService', function(){
         }
         return ok;
     }
+
 
  
     this.correttezzaLink = function(linkToCheck, sourcePort, targetPort, targetOperator, sourceOperator, links){

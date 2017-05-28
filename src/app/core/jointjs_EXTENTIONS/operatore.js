@@ -6,6 +6,7 @@
 operatore = joint.shapes.devs.Atomic.extend({
     
     nome: "",
+
     esportaXML: function(){
 
     },

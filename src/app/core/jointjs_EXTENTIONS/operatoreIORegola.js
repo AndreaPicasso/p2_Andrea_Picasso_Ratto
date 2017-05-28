@@ -35,13 +35,13 @@ operatoreIORegola = operatore.extend({
         for(var i = 0; i<ports.length; i++){
             if(ports[i].group == 'in'){
                 if(i==0){
-                    out=out+'<entity name="'+this.nome+'_' + this.id + 'class="package.Sink"/>';
+                    out=out+'<entity name="'+this.nome+'_' + this.id + '" class="package.Sink"/>';
                     out=out+printSensorIDs(this.sensorIDs);
                 }
                 out += '<port name="'+ports[i].id+'" class="package.IPort"/>';
             } else {
                 if(i==0){
-                    out=out+'<entity name="'+this.nome+'_' + this.id + 'class="package.Source"/>';
+                    out=out+'<entity name="'+this.nome+'_' + this.id + '" class="package.Source"/>';
                     out=out+printSensorIDs(this.sensorIDs);
                 }
                 out += '<port name="'+ports[i].id+'" class="package.OPort"/>';
@@ -94,21 +94,7 @@ operatoreIORegola = operatore.extend({
         this.hasParametro = JSONoperatore.hasParam;
         this.descrizione = JSONoperatore.descrizione;
         this.nome = JSONoperatore.nome;
-        //richiedo il valore della molteplicità 
-        var molteplicita = '';
-        while(true){
-            molteplicita = prompt("Molteplicita segnale:");
-            if(molteplicita > 0){
-                break;
-            }
-        }
-        this.molteplicita = molteplicita;
-        //richiedo i nomi relativi ai sensori 
-        this.sensorIDs = new Array();
-        for(var i = 0; i<molteplicita; i++){
-            this.sensorIDs.push(prompt("Nome segnale "+i+":"));
-        }
-
+        
     },
 
 
